@@ -15,8 +15,6 @@ Contents
    
    dbfields
 
-   index_api
-
 Indices and tables
 ##################
 
