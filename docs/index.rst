@@ -15,6 +15,7 @@ Contents
    :maxdepth: 2
    
    dbfields
+   views
 
 Indices and tables
 ##################
