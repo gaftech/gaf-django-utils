@@ -9,5 +9,5 @@ setup(
     author = 'Gabriel Fournier',
     author_email = 'gabriel@gaftech.fr',
     url = 'http://github.com/fourga38/gaf-django-utils',
-    packages = ['gafutils'],
+    packages = find_packages(),
 )
