@@ -119,6 +119,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    
+    'gafutils',
     'gafutils_testapp',
 )
 
@@ -150,7 +152,7 @@ LOGGING = {
 # django settings must be known when importing django_nose.
 INSTALLED_APPS += ('django_nose',)
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-NOSE_ARGS = ('--with-coverage', '--verbosity=2', '--with-doctest')
+#NOSE_ARGS = ('--with-coverage', '--verbosity=2', '--with-doctest')
 
 
 

@@ -12,6 +12,12 @@ class Picture(models.Model):
     name = models.CharField(max_length=40)
     is_default = DefaultObjectField()
 
+    def __unicode__(self):
+        u = self.name
+        if self.is_default:
+            u = u"[DEFAULT] %s" % u
+        return u
+
 class LargePicture(Picture):
     pass
 
