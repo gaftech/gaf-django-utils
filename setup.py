@@ -8,6 +8,6 @@ setup(
     version = version,
     author = 'Gabriel Fournier',
     author_email = 'gabriel@gaftech.fr',
-    url = 'http://github.com/fourga38/gaf-django-utils',
+    url = 'http://github.com/gaftech/gaf-django-utils',
     packages = find_packages(),
 )
