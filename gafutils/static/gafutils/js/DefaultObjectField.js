@@ -1,17 +1,17 @@
 (function($) {
     $(document).ready(function() {
     	
-    	$('.changelist-results .defaultObjectField').click(function(event){
+    	$('#result_list .defaultObjectField').click(function(event){
     		/* Prevent from unchecking the default object */
-    		if (! $(this).prop('checked')) {
+    		if (! $(this).attr('checked')) {
     			console.debug("Don't uncheck the choosen one !");
     			return false;
     		}
     	});
     	
-    	$('.changelist-results .defaultObjectField').change(function(event){
+    	$('#result_list .defaultObjectField').change(function(event){
     		var $this = $(this);
-    		var checked = $this.prop('checked');
+    		var checked = $this.attr('checked');
     		
     		if (checked) {
     			/* uncheck other checkboxes from this column */
@@ -21,7 +21,7 @@
 	    		var $trs = $tr.siblings();
 	    		var $tds = $trs.find(':nth-child(' + colIndex + ')');
 	    		var $others = $tds.find('.defaultObjectField')
-	    		$others.prop('checked', false);
+	    		$others.attr('checked', false);
     		}    		
     	});
     	
