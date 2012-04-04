@@ -21,7 +21,7 @@ class Breadcrumb(StrAndUnicode):
         return force_unicode(self.render())
     
     def render(self):
-        name = capfirst(self.name)
+        name = capfirst(force_unicode(self.name))
         if self.url is None:
             return name
         else:

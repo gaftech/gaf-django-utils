@@ -1,5 +1,6 @@
 /.project
 /.pydevproject
-*.egg-info
 /.coverage
 /.settings
+*.egg-info
+*.pyc
